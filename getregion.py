@@ -31,7 +31,7 @@ def getZip3_2000():
 
 if __name__=="__main__":
     zip3 = getZip3_2000()
-    dir = "/data2/truecar/analytics/projects/20120426_census/raw/"
+    dir = ""
     f = open(dir + sys.argv[1],"wt")
     writer = csv.writer(f)
     writer.writerow(["i","i_code","j","j_code"])
