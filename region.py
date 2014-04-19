@@ -64,7 +64,7 @@ class Region(SpatialAreas):
         return r, regions
 
 if __name__=="__main__":
-    state = Region("/home/den/data/geo/state/state48/state48"
+    state = Region("/directory/data/geo/state/state48/state48"
                    ,"state"
                    ,["NAME"]
                    ,["STUSPS"]
@@ -77,7 +77,7 @@ if __name__=="__main__":
     print state.loc2row('state')
     """
 
-    data=state.get_attr("/home/den/data/census/state_example.csv"
+    data=state.get_attr("/directory/data/census/state_example.csv"
                         ,'State'
                         , 'Population'
                         , 'pct_male'
